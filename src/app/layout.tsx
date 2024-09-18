@@ -30,12 +30,12 @@ export default function RootLayout(props: {
     <ClerkProvider>
       <html lang="en">
         <NextSSRPlugin routerConfig={extractRouterConfig(ourFileRouter)} />
-        <body className={`${GeistSans.variable}`}>
+        <body className={`${GeistSans.variable} dark`}>
           <div className="grid h-screen grid-rows-[auto,1fr]">
             <TopNav />
             <main className="overflow-y-scroll">{props.children}</main>
           </div>
-          {props.modal}
+          {props.modal}  
           <div id="modal-root" />
         </body>
       </html>
