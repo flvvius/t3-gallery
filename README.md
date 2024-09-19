@@ -27,3 +27,14 @@ You can check out the [create-t3-app GitHub repository](https://github.com/t3-os
 ## How do I deploy this?
 
 Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+
+## Challenges
+
+[] Fix the page layout for images of different sizes
+[] "Selecting" images on the homepage - so the user can delete multiple images at once
+[] "infinite scroll" for the homepage
+[] Folders/albums
+[] Add a "Like" button
+[] Add a "Comment" button
+[] Add a "Share" button
+[] Add a "Download" button
