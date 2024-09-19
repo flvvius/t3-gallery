@@ -26,6 +26,12 @@ importers:
       '@uploadthing/react':
         specifier: ^6.4.1
         version: 6.4.1(@uploadthing/mime-types@0.2.6)(next@14.2.12(@babel/core@7.25.2)(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(uploadthing@6.7.0(next@14.2.12(@babel/core@7.25.2)(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(tailwindcss@3.4.10))
+      '@upstash/ratelimit':
+        specifier: ^2.0.3
+        version: 2.0.3
+      '@upstash/redis':
+        specifier: ^1.34.0
+        version: 1.34.0
       '@vercel/postgres':
         specifier: ^0.10.0
         version: 0.10.0
@@ -1371,6 +1377,16 @@ packages:
     peerDependenciesMeta:
       '@uploadthing/mime-types':
         optional: true
+
+  '@upstash/core-analytics@0.0.10':
+    resolution: {integrity: sha512-7qJHGxpQgQr9/vmeS1PktEwvNAF7TI4iJDi8Pu2CFZ9YUGHZH4fOP5TfYlZ4aVxfopnELiE4BS4FBjyK7V1/xQ==}
+    engines: {node: '>=16.0.0'}
+
+  '@upstash/ratelimit@2.0.3':
+    resolution: {integrity: sha512-BMUpZPZ9IMwrUwohw0HoVAwjBRo5SDb0riAxfCGrLbutuZTPiVagh017Cm3GfhMqwUWLOp0xJQxTCXp812UJVQ==}
+
+  '@upstash/redis@1.34.0':
+    resolution: {integrity: sha512-TrXNoJLkysIl8SBc4u9bNnyoFYoILpCcFJcLyWCccb/QSUmaVKdvY0m5diZqc3btExsapcMbaw/s/wh9Sf1pJw==}
 
   '@vercel/postgres@0.10.0':
     resolution: {integrity: sha512-fSD23DxGND40IzSkXjcFcxr53t3Tiym59Is0jSYIFpG4/0f0KO9SGtcp1sXiebvPaGe7N/tU05cH4yt2S6/IPg==}
@@ -4770,6 +4786,18 @@ snapshots:
       std-env: 3.7.0
     optionalDependencies:
       '@uploadthing/mime-types': 0.2.6
+
+  '@upstash/core-analytics@0.0.10':
+    dependencies:
+      '@upstash/redis': 1.34.0
+
+  '@upstash/ratelimit@2.0.3':
+    dependencies:
+      '@upstash/core-analytics': 0.0.10
+
+  '@upstash/redis@1.34.0':
+    dependencies:
+      crypto-js: 4.2.0
 
   '@vercel/postgres@0.10.0':
     dependencies:
